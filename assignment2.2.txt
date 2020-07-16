@@ -1,0 +1,144 @@
+<!DOCTYPE html>//getElementById
+<html>
+<body>
+
+<p>The length property returns the length of a string:</p>
+
+<p id="demo"></p>
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = txt.length;
+</script>
+
+</body>
+</html>
+
+//search() method
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+document.getElementById("demo").innerHTML = pos;
+</script>
+
+</body>
+</html>
+
+//substring() method
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7,13);
+document.getElementById("demo").innerHTML = res;
+</script>
+
+</body>
+</html>
+//concat() method
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="demo"></p>
+
+<script>
+var text1 = "Hello";
+var text2 = "World!";
+var text3 = text1.concat(" ",text2);
+document.getElementById("demo").innerHTML = text3;
+</script>
+
+</body>
+</html>
+
+
+//Array Methods
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+
+<h2>toString()</h2>
+
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+
+</body>
+</html>
+
+
+//Pushing method
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+
+<h2>push()</h2>
+
+<p>The push() method appends a new element to an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.push("Kiwi");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
+//popping method
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+
+<h2>pop()</h2>
+
+<p>The pop() method removes the last element from an array.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
